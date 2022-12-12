@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/1c4baa6c29.js" crossorigin="anonymous"></script>
     <title>Mir Kamrul Ahsan Asif</title>
 </head>
@@ -30,12 +31,13 @@
             </ul>
         </div>
         <section id="home" class="home-section">
-            <div class="info">
-                <h3>Mir Kamrul Ahsan Asif</h3>
-                <h3>Junior MERN stack developer</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quaerat impedit, id corporis et
-                    sequiiure dolorem, amet adipisci dolores voluptatem facere provident magnam aliquid. Quo, ipsam
-                    laboriosam! Illo, nobis.</p>
+            <div class="info" data-aos="zoom-in">
+                <h3 class="name">Mir Kamrul Ahsan Asif</h3>
+                <p class="title">Junior MERN stack developer</p>
+                <p class="about">I am a Junior Front-End web developer. I develop websites using MongoDB, ExpressJs,
+                    ReactJs and NodeJs. Throughout my learning journey I built many projects and the following some are
+                    the best ones I guess. I am currently working on a new project. I love exploring new technologies
+                    and building projects.Thank You.</p>
                 <div class="text-center">
                     <button class="resume-btn"><a target="_blank"
                             href="https://drive.google.com/file/d/1yaT09shKSH-9r67JToHxTHE-NJxBoZuy/view?usp=share_link">My
@@ -46,7 +48,7 @@
         <section id="projects" class="prj">
             <h1 class="projects-header text-center">Some of my recent Projects</h1>
             <div class="projects-conatainer">
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-right">
                     <img class="project-img" src="./images/cena-dental.png" alt="">
                     <div>
                         <div class="project-info">
@@ -58,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left">
                     <img class="project-img" src="./images/binary-learning.png" alt="">
                     <div>
                         <div class="project-info">
@@ -70,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-right">
                     <img class="project-img" src="./images/quiz-crackerz.png" alt="">
                     <div>
                         <div class="project-info">
@@ -82,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="flip-left">
                     <img class="project-img" src="./images/zens-tech.png" alt="">
                     <div>
                         <div class="project-info">
@@ -96,8 +98,30 @@
                 </div>
             </div>
         </section>
-        
     </main>
+
+    <section class="contact" id="contact">
+        <h3 class="contact-header">Contact Me</h3>
+        <div>
+            <form class='flex-col'>
+                <input class="my-5 p-3 outline-none" placeholder="Your Name" type="text">
+                <input class="my-5 p-3 outline-none" placeholder="Your Name" type="text">
+                <textarea class="my-5 p-3 outline-none" placeholder="Your Message" name="" id="" cols="30" rows="5"></textarea>
+                <div class="text-center">
+                    <button class="resume-btn">Send E-mail</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p class="footer-p">copyrights &copy; @Mir Kamrul Ahsan Asif</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
