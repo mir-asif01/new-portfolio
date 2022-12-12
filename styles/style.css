@@ -156,9 +156,9 @@
 
 /* contact section  */
 .contact{
-    height: 45vh;
+    height:auto;
     width: 60%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .my-5{
@@ -200,6 +200,25 @@
     font-style: italic;
     margin-bottom: 10px;
 }
+
+.about-me{
+    width: 60%;
+    margin: 10px auto;
+}
+.about-me h1{
+    margin: 20px auto;
+}
+.about-img{
+    width: 300px;
+}
+.about-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mx-5{
+    margin: 10px 20px;
+}
 /* media queries */
 
 @media only screen and (max-width:520px) {
@@ -226,5 +245,11 @@
         width: 60%;
         margin: 0 auto;
     }
-    
+    .about-info{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
